@@ -1,0 +1,42 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/images
+public_folder: /assets/images
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+
+      - name: homepage
+        label: Homepage
+        file: _data/homepage.json
+        fields:
+          - { label: "Hero Headline", name: "hero_headline", widget: "string" }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "string" }
+          - { label: "Hero Background Image", name: "hero_image", widget: "image" }
+          - { label: "Philosophy Text", name: "philosophy", widget: "text" }
+
+      - name: services
+        label: Services & Pricing
+        file: _data/services.json
+        fields:
+          - label: Services
+            name: services
+            widget: list
+            fields:
+              - { label: "Service Name", name: "name", widget: "string" }
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Duration", name: "duration", widget: "string" }
+
+      - name: business_info
+        label: Hours & Contact
+        file: _data/business.json
+        fields:
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Tuesday - Friday Hours", name: "hours_weekday", widget: "string" }
+          - { label: "Saturday Hours", name: "hours_saturday", widget: "string" }
