@@ -971,46 +971,44 @@
        1. NAVIGATION
        ============================================================ -->
   <header class="nav" role="banner">
-    <div class="nav__inner container container--wide">
-      <a href="/" class="nav__logo" aria-label="Beesley's Barbershop home">
-        <svg aria-hidden="true" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-logo">
-          <rect x="2" y="14" width="26" height="12" rx="2" fill="currentColor" opacity="0.15"/>
-          <rect x="2" y="17" width="26" height="6" rx="1" fill="currentColor"/>
-          <line x1="28" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-          <line x1="34" y1="20" x2="36" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <line x1="34" y1="20" x2="36" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          <text x="42" y="26" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="currentColor" letter-spacing="0.5">Beesley's Barbershop</text>
+  <div class="nav__inner container container--wide">
+    <a href="/" class="nav__logo" aria-label="Beesley's Barbershop home">
+      <svg aria-hidden="true" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-logo">
+        <rect x="2" y="14" width="26" height="12" rx="2" fill="currentColor" opacity="0.15"/>
+        <rect x="2" y="17" width="26" height="6" rx="1" fill="currentColor"/>
+        <line x1="28" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <line x1="34" y1="20" x2="36" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="34" y1="20" x2="36" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <text x="42" y="26" font-family="'Playfair Display', Georgia, serif" font-size="16" font-weight="700" fill="currentColor" letter-spacing="0.5">Beesley's Barbershop</text>
+      </svg>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="/services">Services &amp; Pricing</a>
+      <a href="/about">About</a>
+      <a href="/contact">Hours &amp; Location</a>
+    </nav>
+
+    <div class="nav__right">
+      <button data-theme-toggle class="theme-toggle" aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
         </svg>
-      </a>
-
-      <nav class="nav__links" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#hours">Hours</a>
-      </nav>
-
-      <div class="nav__right">
-        <button data-theme-toggle class="theme-toggle" aria-label="Switch to dark mode">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-        </button>
-        <a href="/booking" class="btn btn--primary nav__cta">Book Now</a>
-        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
+      </button>
+      <a href="/booking" class="btn btn--primary nav__cta">Book Now</a>
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </div>
 
-    <div class="nav__mobile" id="mobile-menu" hidden>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#testimonials">Reviews</a>
-      <a href="#hours">Hours</a>
-      <a href="/booking" class="btn btn--primary" style="margin-top:var(--space-2);">Book Now</a>
-    </div>
-  </header>
+  <div class="nav__mobile" id="mobile-menu" hidden>
+    <a href="/services">Services &amp; Pricing</a>
+    <a href="/about">About</a>
+    <a href="/contact">Hours &amp; Location</a>
+    <a href="/booking" class="btn btn--primary" style="margin-top:var(--space-2);">Book Now</a>
+  </div>
+</header>
 
 
   <!-- ============================================================
@@ -1358,54 +1356,65 @@
        SCRIPTS
        ============================================================ -->
   <script>
-    // Dark mode toggle
-    (function() {
-      const toggle = document.querySelector('[data-theme-toggle]');
-      const root   = document.documentElement;
-      let theme    = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
-      root.setAttribute('data-theme', theme);
+  (function() {
+    const toggle = document.querySelector('[data-theme-toggle]');
+    const root = document.documentElement;
+    let theme = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+    root.setAttribute('data-theme', theme);
 
-      const sun  = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
-      const moon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+    const sun = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+    const moon = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
 
-      function updateUI() {
-        if (toggle) {
-          toggle.innerHTML = theme === 'dark' ? sun : moon;
-          toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
-        }
-      }
-      updateUI();
-
+    function updateUI() {
       if (toggle) {
-        toggle.addEventListener('click', function() {
-          theme = theme === 'dark' ? 'light' : 'dark';
-          root.setAttribute('data-theme', theme);
-          updateUI();
-        });
+        toggle.innerHTML = theme === 'dark' ? sun : moon;
+        toggle.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
       }
-    })();
-
-    // Nav hamburger toggle
-    (function() {
-      const hamburger  = document.querySelector('.nav__hamburger');
-      const mobileMenu = document.querySelector('.nav__mobile');
-      if (!hamburger || !mobileMenu) return;
-
-      hamburger.addEventListener('click', function() {
-        const isOpen = hamburger.getAttribute('aria-expanded') === 'true';
-        hamburger.setAttribute('aria-expanded', String(!isOpen));
-        mobileMenu.hidden = isOpen;
+    }
+    updateUI();
+    if (toggle) {
+      toggle.addEventListener('click', function() {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        updateUI();
       });
+    }
+  })();
 
-      // Close mobile menu when a link is clicked
-      mobileMenu.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function() {
-          hamburger.setAttribute('aria-expanded', 'false');
-          mobileMenu.hidden = true;
-        });
-      });
-    })();
-  </script>
+  (function() {
+    const hamburger = document.querySelector('.nav__hamburger');
+    const mobileMenu = document.querySelector('.nav__mobile');
+    if (!hamburger || !mobileMenu) return;
+
+    const bars = hamburger.querySelectorAll('span');
+
+    function openMenu() {
+      hamburger.setAttribute('aria-expanded', 'true');
+      hamburger.setAttribute('aria-label', 'Close menu');
+      mobileMenu.hidden = false;
+      bars[0].style.transform = 'translateY(7px) rotate(45deg)';
+      bars[1].style.opacity = '0';
+      bars[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    }
+
+    function closeMenu() {
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open menu');
+      mobileMenu.hidden = true;
+      bars[0].style.transform = '';
+      bars[1].style.opacity = '';
+      bars[2].style.transform = '';
+    }
+
+    hamburger.addEventListener('click', function() {
+      hamburger.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', closeMenu);
+    });
+  })();
+</script>
 
 </body>
 </html>
