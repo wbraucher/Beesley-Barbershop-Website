@@ -14,7 +14,6 @@
     :root {
       --font-display: 'Playfair Display', Georgia, serif;
       --font-body: 'Work Sans', 'Helvetica Neue', sans-serif;
-
       --color-bg: #f5f0e8;
       --color-surface: #f9f6f0;
       --color-surface-2: #fdfcfa;
@@ -22,33 +21,26 @@
       --color-surface-dynamic: #e5dfd4;
       --color-divider: #d8d1c4;
       --color-border: #cec6b8;
-
       --color-text: #1c1915;
       --color-text-muted: #6b6259;
       --color-text-faint: #a89f94;
       --color-text-inverse: #f5f0e8;
-
       --color-primary: #b83232;
       --color-primary-hover: #961f1f;
       --color-primary-active: #741010;
       --color-primary-highlight: #f0dcdc;
       --color-closed: #9a9088;
-
       --radius-sm: 0.25rem;
       --radius-md: 0.375rem;
       --radius-lg: 0.5rem;
       --radius-full: 9999px;
-
       --transition-interactive: 160ms cubic-bezier(0.16, 1, 0.3, 1);
-
       --shadow-sm: 0 1px 3px oklch(0.18 0.02 60 / 0.08);
       --shadow-md: 0 4px 14px oklch(0.18 0.02 60 / 0.10);
       --shadow-lg: 0 12px 36px oklch(0.18 0.02 60 / 0.14);
-
       --content-narrow: 640px;
       --content-default: 960px;
       --content-wide: 1200px;
-
       --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
       --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
       --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
@@ -56,38 +48,20 @@
       --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
       --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
       --text-3xl: clamp(2.5rem, 1rem + 4vw, 5rem);
-
-      --space-1: 0.25rem;
-      --space-2: 0.5rem;
-      --space-3: 0.75rem;
-      --space-4: 1rem;
-      --space-5: 1.25rem;
-      --space-6: 1.5rem;
-      --space-8: 2rem;
-      --space-10: 2.5rem;
-      --space-12: 3rem;
-      --space-16: 4rem;
-      --space-20: 5rem;
-      --space-24: 6rem;
-      --space-32: 8rem;
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem;
+      --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
+      --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
+      --space-16: 4rem; --space-20: 5rem; --space-24: 6rem; --space-32: 8rem;
     }
 
     [data-theme="dark"] {
-      --color-bg: #111009;
-      --color-surface: #181612;
-      --color-surface-2: #1e1c17;
-      --color-surface-offset: #14120e;
-      --color-surface-dynamic: #252219;
-      --color-divider: #2a2720;
-      --color-border: #332f27;
-      --color-text: #e8e2d8;
-      --color-text-muted: #8a8278;
-      --color-text-faint: #5c564e;
+      --color-bg: #111009; --color-surface: #181612; --color-surface-2: #1e1c17;
+      --color-surface-offset: #14120e; --color-surface-dynamic: #252219;
+      --color-divider: #2a2720; --color-border: #332f27;
+      --color-text: #e8e2d8; --color-text-muted: #8a8278; --color-text-faint: #5c564e;
       --color-text-inverse: #1c1915;
-      --color-primary: #d95f5f;
-      --color-primary-hover: #e87878;
-      --color-primary-active: #f09090;
-      --color-primary-highlight: #3d1c1c;
+      --color-primary: #d95f5f; --color-primary-hover: #e87878;
+      --color-primary-active: #f09090; --color-primary-highlight: #3d1c1c;
       --color-closed: #5c554e;
       --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.25);
       --shadow-md: 0 4px 14px oklch(0 0 0 / 0.35);
@@ -96,21 +70,13 @@
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme]) {
-        --color-bg: #111009;
-        --color-surface: #181612;
-        --color-surface-2: #1e1c17;
-        --color-surface-offset: #14120e;
-        --color-surface-dynamic: #252219;
-        --color-divider: #2a2720;
-        --color-border: #332f27;
-        --color-text: #e8e2d8;
-        --color-text-muted: #8a8278;
-        --color-text-faint: #5c564e;
+        --color-bg: #111009; --color-surface: #181612; --color-surface-2: #1e1c17;
+        --color-surface-offset: #14120e; --color-surface-dynamic: #252219;
+        --color-divider: #2a2720; --color-border: #332f27;
+        --color-text: #e8e2d8; --color-text-muted: #8a8278; --color-text-faint: #5c564e;
         --color-text-inverse: #1c1915;
-        --color-primary: #d95f5f;
-        --color-primary-hover: #e87878;
-        --color-primary-active: #f09090;
-        --color-primary-highlight: #3d1c1c;
+        --color-primary: #d95f5f; --color-primary-hover: #e87878;
+        --color-primary-active: #f09090; --color-primary-highlight: #3d1c1c;
         --color-closed: #5c554e;
         --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.25);
         --shadow-md: 0 4px 14px oklch(0 0 0 / 0.35);
@@ -142,12 +108,12 @@
     h1, h2, h3, h4 { text-wrap: balance; line-height: 1.2; }
     p, li { text-wrap: pretty; max-width: 68ch; }
     button { cursor: pointer; background: none; border: none; }
-
     ::selection { background: oklch(from var(--color-primary) l c h / 0.2); }
     :focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm); }
 
     a, button, [role="button"], input, textarea, select {
-      transition: color var(--transition-interactive), background var(--transition-interactive), border-color var(--transition-interactive), box-shadow var(--transition-interactive);
+      transition: color var(--transition-interactive), background var(--transition-interactive),
+                  border-color var(--transition-interactive), box-shadow var(--transition-interactive);
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -163,445 +129,128 @@
     .container--narrow { max-width: var(--content-narrow); }
 
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: var(--space-2);
-      padding: var(--space-3) var(--space-6);
-      font-size: var(--text-sm);
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      text-decoration: none;
-      border-radius: var(--radius-md);
-      border: 1.5px solid transparent;
-      min-height: 44px;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: var(--space-2); padding: var(--space-3) var(--space-6);
+      font-size: var(--text-sm); font-weight: 600; letter-spacing: 0.03em;
+      text-decoration: none; border-radius: var(--radius-md);
+      border: 1.5px solid transparent; min-height: 44px; white-space: nowrap;
     }
-
-    .btn--primary {
-      background: var(--color-primary);
-      color: #fff;
-      border-color: var(--color-primary);
-    }
+    .btn--primary { background: var(--color-primary); color: #fff; border-color: var(--color-primary); }
     .btn--primary:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
     .btn--primary:active { background: var(--color-primary-active); }
-
-    .btn--lg {
-      padding: var(--space-4) var(--space-10);
-      font-size: var(--text-base);
-      min-height: 52px;
-    }
+    .btn--lg { padding: var(--space-4) var(--space-10); font-size: var(--text-base); min-height: 52px; }
 
     .nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
+      position: sticky; top: 0; z-index: 100;
       background: var(--color-bg);
       border-bottom: 1px solid oklch(from var(--color-text) l c h / 0.10);
       box-shadow: var(--shadow-sm);
     }
-
-    .nav__inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 64px;
-      gap: var(--space-8);
-    }
-
-    .nav__logo {
-      text-decoration: none;
-      color: var(--color-text);
-      flex-shrink: 0;
-    }
-
+    .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: var(--space-8); }
+    .nav__logo { text-decoration: none; color: var(--color-text); flex-shrink: 0; }
     .site-logo { height: 32px; width: auto; color: var(--color-text); }
-
     .nav__links { display: flex; gap: var(--space-8); list-style: none; }
-    .nav__links a {
-      font-size: var(--text-sm);
-      font-weight: 500;
-      color: var(--color-text-muted);
-      text-decoration: none;
-      letter-spacing: 0.02em;
-    }
+    .nav__links a { font-size: var(--text-sm); font-weight: 500; color: var(--color-text-muted); text-decoration: none; letter-spacing: 0.02em; }
     .nav__links a:hover { color: var(--color-text); }
-
+    .nav__links a[aria-current="page"] { color: var(--color-primary); font-weight: 600; }
     .nav__right { display: flex; align-items: center; gap: var(--space-3); }
-
     .theme-toggle {
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: var(--radius-md);
-      color: var(--color-text-muted);
-      background: none;
-      border: none;
-      flex-shrink: 0;
+      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius-md); color: var(--color-text-muted); background: none; border: none; flex-shrink: 0;
     }
     .theme-toggle:hover { background: var(--color-surface-offset); color: var(--color-text); }
-
-    .nav__hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      padding: var(--space-2);
-      background: none;
-      border: none;
-    }
-    .nav__hamburger span {
-      display: block;
-      width: 22px;
-      height: 2px;
-      background: var(--color-text);
-      border-radius: var(--radius-full);
-    }
-
+    .nav__hamburger { display: none; flex-direction: column; gap: 5px; padding: var(--space-2); background: none; border: none; }
+    .nav__hamburger span { display: block; width: 22px; height: 2px; background: var(--color-text); border-radius: var(--radius-full); }
     .nav__mobile {
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
       padding: var(--space-4) var(--space-6) var(--space-6);
-      gap: var(--space-4);
-      border-top: 1px solid var(--color-divider);
-      background: var(--color-bg);
+      gap: var(--space-4); border-top: 1px solid var(--color-divider); background: var(--color-bg);
     }
-    .nav__mobile a {
-      font-size: var(--text-base);
-      font-weight: 500;
-      text-decoration: none;
-      color: var(--color-text);
-    }
-
+    .nav__mobile a { font-size: var(--text-base); font-weight: 500; text-decoration: none; color: var(--color-text); }
     @media (max-width: 768px) {
       .nav__links { display: none; }
       .nav__cta { display: none; }
       .nav__hamburger { display: flex; }
     }
 
-    .page-hero {
-      background: var(--color-text);
-      padding-block: clamp(var(--space-16), 7vw, var(--space-24));
-    }
-    .page-hero__eyebrow {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--color-primary);
-      margin-bottom: var(--space-4);
-    }
-    .page-hero__heading {
-      font-family: var(--font-display);
-      font-size: var(--text-3xl);
-      font-weight: 700;
-      color: var(--color-text-inverse);
-      margin-bottom: var(--space-4);
-    }
-    .page-hero__sub {
-      font-size: var(--text-lg);
-      color: oklch(from var(--color-text-inverse) l c h / 0.68);
-      max-width: 44ch;
-      line-height: 1.5;
-    }
+    .page-hero { background: var(--color-text); padding-block: clamp(var(--space-16), 7vw, var(--space-24)); }
+    .page-hero__eyebrow { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-primary); margin-bottom: var(--space-4); }
+    .page-hero__heading { font-family: var(--font-display); font-size: var(--text-3xl); font-weight: 700; color: var(--color-text-inverse); margin-bottom: var(--space-4); }
+    .page-hero__sub { font-size: var(--text-lg); color: oklch(from var(--color-text-inverse) l c h / 0.68); max-width: 44ch; line-height: 1.5; }
 
-    .section {
-      padding-block: clamp(var(--space-16), 8vw, var(--space-24));
-    }
+    .section { padding-block: clamp(var(--space-16), 8vw, var(--space-24)); }
+    .section__eyebrow { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; color: var(--color-primary); margin-bottom: var(--space-3); }
+    .section__title { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 700; color: var(--color-text); margin-bottom: var(--space-4); }
+    .section__intro { color: var(--color-text-muted); line-height: 1.75; margin-bottom: var(--space-10); max-width: 56ch; }
 
-    .section__eyebrow {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.10em;
-      text-transform: uppercase;
-      color: var(--color-primary);
-      margin-bottom: var(--space-3);
-    }
-
-    .section__title {
-      font-family: var(--font-display);
-      font-size: var(--text-2xl);
-      font-weight: 700;
-      color: var(--color-text);
-      margin-bottom: var(--space-4);
-    }
-
-    .section__intro {
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      margin-bottom: var(--space-10);
-      max-width: 56ch;
-    }
-
-    .steps {
-      display: grid;
-      gap: var(--space-8);
-    }
-
-    .step {
-      display: grid;
-      grid-template-columns: 72px 1fr;
-      gap: var(--space-6);
-      align-items: start;
-      padding-bottom: var(--space-6);
-      border-bottom: 1px solid var(--color-divider);
-    }
-
+    .steps { display: grid; gap: var(--space-8); }
+    .step { display: grid; grid-template-columns: 72px 1fr; gap: var(--space-6); align-items: start; padding-bottom: var(--space-6); border-bottom: 1px solid var(--color-divider); }
     .step:last-child { border-bottom: 0; padding-bottom: 0; }
-
-    .step__number {
-      font-family: var(--font-display);
-      font-size: clamp(2.5rem, 2rem + 2vw, 4rem);
-      line-height: 1;
-      color: var(--color-primary);
-    }
-
-    .step__title {
-      font-family: var(--font-display);
-      font-size: var(--text-xl);
-      font-weight: 600;
-      color: var(--color-text);
-      margin-bottom: var(--space-2);
-    }
-
-    .step__body {
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      max-width: 48ch;
-    }
+    .step__number { font-family: var(--font-display); font-size: clamp(2.5rem, 2rem + 2vw, 4rem); line-height: 1; color: var(--color-primary); }
+    .step__title { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-2); }
+    .step__body { color: var(--color-text-muted); line-height: 1.75; max-width: 48ch; }
 
     .booking-shell {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-md);
+      background: var(--color-surface); border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
       padding: clamp(var(--space-6), 4vw, var(--space-10));
     }
+    .booking-shell__header { display: flex; justify-content: space-between; gap: var(--space-6); align-items: end; margin-bottom: var(--space-8); flex-wrap: wrap; }
+    .booking-shell__title { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; color: var(--color-text); margin-bottom: var(--space-2); }
+    .booking-shell__sub { color: var(--color-text-muted); line-height: 1.65; }
+    .booking-shell__meta { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-faint); }
 
-    .booking-shell__header {
-      display: flex;
-      justify-content: space-between;
-      gap: var(--space-6);
-      align-items: end;
-      margin-bottom: var(--space-8);
-      flex-wrap: wrap;
-    }
-
-    .booking-shell__title {
-      font-family: var(--font-display);
-      font-size: var(--text-xl);
-      font-weight: 600;
-      color: var(--color-text);
-      margin-bottom: var(--space-2);
-    }
-
-    .booking-shell__sub {
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
-
-    .booking-shell__meta {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-text-faint);
-    }
-
-    .booking-fields {
-      display: grid;
-      gap: var(--space-8);
-    }
-
-    .field-group label {
-      display: block;
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-text-faint);
-      margin-bottom: var(--space-3);
-    }
-
+    .booking-fields { display: grid; gap: var(--space-8); }
+    .field-group label { display: block; font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-faint); margin-bottom: var(--space-3); }
     .fake-select {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      min-height: 52px;
-      padding: 0 var(--space-4);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      background: var(--color-surface-2);
-      color: var(--color-text);
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 52px; padding: 0 var(--space-4);
+      border: 1px solid var(--color-border); border-radius: var(--radius-md);
+      background: var(--color-surface-2); color: var(--color-text);
       box-shadow: inset 0 1px 0 oklch(from var(--color-text-inverse) l c h / 0.25);
     }
+    .fake-select span:last-child { color: var(--color-text-faint); font-size: 0.95em; }
 
-    .fake-select span:last-child {
-      color: var(--color-text-faint);
-      font-size: 0.95em;
-    }
-
-    .calendar-shell {
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      background: var(--color-surface-2);
-    }
-
-    .calendar-shell__top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: var(--space-4) var(--space-5);
-      border-bottom: 1px solid var(--color-divider);
-      background: var(--color-surface-offset);
-    }
-
-    .calendar-shell__month {
-      font-family: var(--font-display);
-      font-size: var(--text-lg);
-      font-weight: 600;
-      color: var(--color-text);
-    }
-
-    .calendar-shell__nav {
-      display: flex;
-      gap: var(--space-2);
-      color: var(--color-text-faint);
-      font-size: var(--text-sm);
-    }
-
-    .calendar-weekdays,
-    .calendar-grid {
-      display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
-    }
-
-    .calendar-weekdays div {
-      padding: var(--space-3);
-      text-align: center;
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-text-faint);
-      border-bottom: 1px solid var(--color-divider);
-    }
-
-    .calendar-day {
-      aspect-ratio: 1 / 1;
-      border-right: 1px solid var(--color-divider);
-      border-bottom: 1px solid var(--color-divider);
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-end;
-      padding: var(--space-3);
-      color: var(--color-text);
-      background: var(--color-surface-2);
-      font-variant-numeric: tabular-nums;
-    }
-
+    .calendar-shell { border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; background: var(--color-surface-2); }
+    .calendar-shell__top { display: flex; align-items: center; justify-content: space-between; padding: var(--space-4) var(--space-5); border-bottom: 1px solid var(--color-divider); background: var(--color-surface-offset); }
+    .calendar-shell__month { font-family: var(--font-display); font-size: var(--text-lg); font-weight: 600; color: var(--color-text); }
+    .calendar-shell__nav { display: flex; gap: var(--space-2); color: var(--color-text-faint); font-size: var(--text-sm); }
+    .calendar-weekdays, .calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    .calendar-weekdays div { padding: var(--space-3); text-align: center; font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-faint); border-bottom: 1px solid var(--color-divider); }
+    .calendar-day { aspect-ratio: 1 / 1; border-right: 1px solid var(--color-divider); border-bottom: 1px solid var(--color-divider); display: flex; align-items: flex-start; justify-content: flex-end; padding: var(--space-3); color: var(--color-text); background: var(--color-surface-2); font-variant-numeric: tabular-nums; }
     .calendar-day:nth-child(7n) { border-right: 0; }
     .calendar-day.is-muted { color: var(--color-text-faint); background: var(--color-surface); }
-    .calendar-day.is-selected {
-      background: var(--color-primary-highlight);
-      color: var(--color-primary);
-      font-weight: 700;
-    }
+    .calendar-day.is-selected { background: var(--color-primary-highlight); color: var(--color-primary); font-weight: 700; }
 
-    .booking-actions {
-      display: flex;
-      justify-content: flex-start;
-      margin-top: var(--space-2);
-    }
+    .booking-actions { display: flex; justify-content: flex-start; margin-top: var(--space-2); }
 
-    .walkin-note {
-      padding-top: var(--space-2);
-      color: var(--color-text-muted);
-      line-height: 1.75;
-      font-size: var(--text-lg);
-    }
-
+    .walkin-note { padding-top: var(--space-2); color: var(--color-text-muted); line-height: 1.75; font-size: var(--text-lg); }
     .walkin-note strong { color: var(--color-text); }
 
-    .footer {
-      background: var(--color-surface-offset);
-      border-top: 1px solid var(--color-border);
-      padding-block: var(--space-12);
-    }
-
-    .footer__grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: var(--space-10);
-    }
-
-    @media (max-width: 768px) {
-      .step { grid-template-columns: 56px 1fr; gap: var(--space-4); }
-    }
-
-    @media (max-width: 640px) {
-      .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); }
-      .calendar-day { padding: var(--space-2); font-size: var(--text-sm); }
-    }
-
+    .footer { background: var(--color-surface-offset); border-top: 1px solid var(--color-border); padding-block: var(--space-12); }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: var(--space-10); }
+    @media (max-width: 768px) { .step { grid-template-columns: 56px 1fr; gap: var(--space-4); } }
+    @media (max-width: 640px) { .footer__grid { grid-template-columns: 1fr; gap: var(--space-8); } .calendar-day { padding: var(--space-2); font-size: var(--text-sm); } }
     .footer__brand .site-logo { margin-bottom: var(--space-4); color: var(--color-text); }
     .footer__tagline { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.65; max-width: 32ch; }
-
-    .footer__col-title {
-      font-size: var(--text-xs);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-text-faint);
-      margin-bottom: var(--space-4);
-    }
-
-    .footer__address {
-      font-style: normal;
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      line-height: 1.75;
-    }
+    .footer__col-title { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-faint); margin-bottom: var(--space-4); }
+    .footer__address { font-style: normal; font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.75; }
     .footer__address a { color: var(--color-primary); text-decoration: none; }
     .footer__address a:hover { text-decoration: underline; }
-
-    .footer__hours-list {
-      list-style: none;
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
-      line-height: 1.9;
-    }
+    .footer__hours-list { list-style: none; font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.9; }
     .footer__hours-list .closed { color: var(--color-text-faint); }
-
-    .footer__bottom {
-      margin-top: var(--space-10);
-      padding-top: var(--space-6);
-      border-top: 1px solid var(--color-divider);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--space-4);
-    }
-
+    .footer__bottom { margin-top: var(--space-10); padding-top: var(--space-6); border-top: 1px solid var(--color-divider); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); }
     .footer__copy { font-size: var(--text-xs); color: var(--color-text-faint); }
     .footer__social { display: flex; gap: var(--space-4); }
-    .footer__social a {
-      font-size: var(--text-xs);
-      font-weight: 600;
-      color: var(--color-text-muted);
-      text-decoration: none;
-      letter-spacing: 0.03em;
-    }
+    .footer__social a { font-size: var(--text-xs); font-weight: 600; color: var(--color-text-muted); text-decoration: none; letter-spacing: 0.03em; }
     .footer__social a:hover { color: var(--color-primary); }
   </style>
 </head>
 <body>
+
   <header class="nav" role="banner">
     <div class="nav__inner container container--wide">
-      <a href="index.html" class="nav__logo" aria-label="Beesley's Barbershop home">
+      <a href="/" class="nav__logo" aria-label="Beesley's Barbershop home">
         <svg aria-hidden="true" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-logo">
           <rect x="2" y="14" width="26" height="12" rx="2" fill="currentColor" opacity="0.15"/>
           <rect x="2" y="17" width="26" height="6" rx="1" fill="currentColor"/>
@@ -613,10 +262,10 @@
       </a>
 
       <nav class="nav__links" aria-label="Primary navigation">
-        <a href="index.html#services">Services</a>
-        <a href="services.html">Pricing</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Hours &amp; Location</a>
+        <a href="/#services">Services</a>
+        <a href="/services">Pricing</a>
+        <a href="/about">About</a>
+        <a href="/contact">Hours &amp; Location</a>
       </nav>
 
       <div class="nav__right">
@@ -625,7 +274,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
           </svg>
         </button>
-        <a href="booking.html" class="btn btn--primary nav__cta" aria-current="page">Book Now</a>
+        <a href="/booking" class="btn btn--primary nav__cta" aria-current="page">Book Now</a>
         <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
@@ -633,11 +282,11 @@
     </div>
 
     <div class="nav__mobile" id="mobile-menu" hidden>
-      <a href="index.html#services">Services</a>
-      <a href="services.html">Pricing</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Hours &amp; Location</a>
-      <a href="booking.html" class="btn btn--primary" aria-current="page" style="margin-top:var(--space-2);">Book Now</a>
+      <a href="/#services">Services</a>
+      <a href="/services">Pricing</a>
+      <a href="/about">About</a>
+      <a href="/contact">Hours &amp; Location</a>
+      <a href="/booking" class="btn btn--primary" aria-current="page" style="margin-top:var(--space-2);">Book Now</a>
     </div>
   </header>
 
@@ -663,7 +312,6 @@
             <p class="step__body">Choose the service you want so the right amount of time gets set aside.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step__number" aria-hidden="true">2</div>
           <div>
@@ -671,7 +319,6 @@
             <p class="step__body">Look through the calendar, find a slot that works, and lock it in.</p>
           </div>
         </div>
-
         <div class="step">
           <div class="step__number" aria-hidden="true">3</div>
           <div>
@@ -700,7 +347,7 @@
             <label for="service-preview">Service</label>
             <div class="fake-select" id="service-preview" aria-hidden="true">
               <span>Select a service</span>
-              <span>▼</span>
+              <span>&#9660;</span>
             </div>
           </div>
 
@@ -716,40 +363,23 @@
               </div>
               <div class="calendar-grid">
                 <div class="calendar-day is-muted">31</div>
-                <div class="calendar-day">1</div>
-                <div class="calendar-day">2</div>
-                <div class="calendar-day">3</div>
-                <div class="calendar-day">4</div>
-                <div class="calendar-day">5</div>
-                <div class="calendar-day">6</div>
-                <div class="calendar-day">7</div>
-                <div class="calendar-day">8</div>
-                <div class="calendar-day">9</div>
-                <div class="calendar-day is-selected">10</div>
-                <div class="calendar-day">11</div>
-                <div class="calendar-day">12</div>
-                <div class="calendar-day">13</div>
-                <div class="calendar-day">14</div>
-                <div class="calendar-day">15</div>
-                <div class="calendar-day">16</div>
-                <div class="calendar-day">17</div>
-                <div class="calendar-day">18</div>
-                <div class="calendar-day">19</div>
-                <div class="calendar-day">20</div>
-                <div class="calendar-day">21</div>
-                <div class="calendar-day">22</div>
-                <div class="calendar-day">23</div>
-                <div class="calendar-day">24</div>
-                <div class="calendar-day">25</div>
-                <div class="calendar-day">26</div>
-                <div class="calendar-day">27</div>
-                <div class="calendar-day">28</div>
-                <div class="calendar-day">29</div>
-                <div class="calendar-day">30</div>
-                <div class="calendar-day is-muted">1</div>
-                <div class="calendar-day is-muted">2</div>
-                <div class="calendar-day is-muted">3</div>
-                <div class="calendar-day is-muted">4</div>
+                <div class="calendar-day">1</div><div class="calendar-day">2</div>
+                <div class="calendar-day">3</div><div class="calendar-day">4</div>
+                <div class="calendar-day">5</div><div class="calendar-day">6</div>
+                <div class="calendar-day">7</div><div class="calendar-day">8</div>
+                <div class="calendar-day">9</div><div class="calendar-day is-selected">10</div>
+                <div class="calendar-day">11</div><div class="calendar-day">12</div>
+                <div class="calendar-day">13</div><div class="calendar-day">14</div>
+                <div class="calendar-day">15</div><div class="calendar-day">16</div>
+                <div class="calendar-day">17</div><div class="calendar-day">18</div>
+                <div class="calendar-day">19</div><div class="calendar-day">20</div>
+                <div class="calendar-day">21</div><div class="calendar-day">22</div>
+                <div class="calendar-day">23</div><div class="calendar-day">24</div>
+                <div class="calendar-day">25</div><div class="calendar-day">26</div>
+                <div class="calendar-day">27</div><div class="calendar-day">28</div>
+                <div class="calendar-day">29</div><div class="calendar-day">30</div>
+                <div class="calendar-day is-muted">1</div><div class="calendar-day is-muted">2</div>
+                <div class="calendar-day is-muted">3</div><div class="calendar-day is-muted">4</div>
               </div>
             </div>
           </div>
@@ -764,7 +394,7 @@
 
   <section class="section" style="padding-top:0;">
     <div class="container container--narrow">
-      <p class="walkin-note"><strong>Prefer to walk in?</strong> We're open Tuesday through Saturday. No appointment needed.</p>
+      <p class="walkin-note"><strong>Prefer to walk in?</strong> We are open Tuesday through Saturday. No appointment needed.</p>
     </div>
   </section>
 
